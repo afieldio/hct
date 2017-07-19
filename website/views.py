@@ -5,7 +5,10 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-	return render(request, 'index.html')
+	context = {
+		'active':'home'
+	}
+	return render(request, 'index.html', context=context)
 
 def trust(request):
 	return render(request, 'trust.html')
