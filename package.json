@@ -1,0 +1,11 @@
+{
+  "name": "hct",
+  "version": "1.0.0",
+  "description": "Hobson's Conduit Trust",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Field",
+  "license": "ISC"
+}
