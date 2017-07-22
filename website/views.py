@@ -1,20 +1,28 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+import datetime
+
 from django.shortcuts import render
 
 # Create your views here.
+
+
 def index(request):
-	context = {
-		'active':'home'
-	}
-	return render(request, 'index.html', context=context)
+    return render(request, 'index.html')
+
 
 def trust(request):
-	return render(request, 'trust.html')
+    return render(request, 'trust.html')
+
+
+def conduit(request):
+    return render(request, 'conduit.html')
+
 
 def location(request):
-	return render(request, 'location.html')
+    return render(request, 'location.html')
+
 
 def wildlife(request):
-	return render(request, 'wildlife.html')
+    return render(request, 'wildlife.html')

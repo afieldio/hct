@@ -1,1 +1,259 @@
-<h1>Wildlife</h1>
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+	Wildlife Page
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+	<div class="trust-hero">
+		<h1>The Wildlife</h1>
+		<hr>
+		<p><em>Some flora and fauna you can expect <br> to see along the conduit<em></p>
+	</div>
+</section>
+<section class="mammals" id="mammals">
+	<div class="container">
+		<h2>Mammals</h2>
+		<hr>
+		<div class="row">
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/water-vole.jpg' %}">
+				<h3>Water Voles</h3>
+				<p>Ratty from Wind in the Willows, is found all along the conduit, where it has managed to survive the arrival of the Mink in the river Cam. This species was once very common but now has a much more restricted range due in part to predation by the mink. A good population is present from close to Nine Wells right down to the Botanical Gardens.  Water voles are a protected species and seem to like this environment.  They look superficially like the brown rat, but are from a different family and have a much rounder face, darker fur and their ears are also much smaller than a rat. They can often be seen nibbling vegetation along the banks or swimming strongly along the water course.  They dig burrows close to the waters edge.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/water-shrew.jpg' %}">
+				<h3>Water Shrews</h3>
+				<p>These are the largest of the British shrews and are present in the conduit, where they feed  by swimming underwater to catch such things as caddis fly larvae and other aquatic insects. They are black on top top with white undersides and a very pointed nose. They also feed along the banks on more terrestrial insects and worms. They are solitary animals and very territorial but have a very short life living only 18 months as a maximum.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/muntjac.jpg' %}">
+				<h3>Muntjac</h3>
+				<p>Whilst not strictly an aquatic mammal, Muntjac are now so common, that they are often seen on the banks of the Conduit. Their bark often heard at night can be mistaken for a fox.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="birds" id="birds">
+	<div class="container">
+		<h2>Birds</h2>
+		<hr>
+		<div class="row">
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/mallard.jpg' %}">
+				<h3>Mallard</h3>
+				<p>Perhaps the most ubiquitous species at all times of the year. Several pairs breed, and family parties can be seen in summer all along the Brook.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/grey-heron.jpg' %}">
+				<h3>Grey Heron</h3>
+				<p>Can be seen in or along the upper reaches of the Brook at any time of year. The nearest breeding colony is along the River Cam near where Vicar’s Brook makes its outfall.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/little-egret.jpg' %}">
+				<h3>Little Egret</h3>
+				<p>Increasingly frequent along the upper reaches, with up to six together being seen in the winter months. No local breeding has yet been established, but as this species continues to expand its range, that cannot be far off.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/snipe.jpg' %}">
+				<h3>Snipe</h3>
+				<p>Snipe feed in winter along the muddy edges of the Brook and its feeder ditches. Usually only seen when it flies away with its zig-zag flight and harsh call.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/moorhen.jpg' %}">
+				<h3>Moorhen</h3>
+				<p>A common species along the Brook at all times of year. Several pairs nest, and adults can be seen feeding young in many places, often along the most public stretches beside the University Botanic Garden and Brookside.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/kingfisher.jpg' %}">
+				<h3>Kingfisher</h3>
+				<p>From August to April several Kingfishers hold winter territories all along the Brook, and can often be seen perching on bankside vegetation or flying, like bright blue bullets, low over the water. Has occasionally nested along what have been, until now, the less disturbed upper reaches.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/reed-warbler.jpg' %}">
+				<h3>Reed Warbler</h3>
+				<p>With the growth of Common Reed (Phragmites australis) in sections of the watercourse, Reed Warblers are becoming an increasingly common summer visitor. This poses a management dilemma, as the reed growth, if allowed to continue unabated, becomes a serious obstruction to the necessary flow of water. Hand cutting in winter keeps it in check, though the area of reedbed increases each year.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/reed-bunting.jpg' %}">
+				<h3>Reed Bunting</h3>
+				<p>Not as particular about its habitat as the Reed Warbler, this species nests in a variety of vegetation both in the stream and along the banks and adjoining ditches. It is present all year round, sometimes in flocks of up to twenty birds in winter.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/grey-wagtail.jpg' %}">
+				<h3>Grey Wagtail</h3>
+				<p>Seen in winter along the faster moving upper reaches of the Brook, this elegant bird is often heard before being seen, with its loud disyllabic “chi-chic” flight call. Has attempted to nest in the past, but human disturbance now makes this unlikely.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="reptiles" id="reptiles">
+	<div class="container">
+		<h2>Reptiles and Amphibians</h2>
+		<hr>
+		<div class="row">
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/grass-snake.jpg' %}">
+				<h3>Grass Snake</h3>
+				<p>Content Here</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/common-frog.jpg' %}">
+				<h3>Common Frog</h3>
+				<p>Content Here</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/common-toad.jpg' %}">
+				<h3>Common Toad</h3>
+				<p>Content Here</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/smooth-newt.jpg' %}">
+				<h3>Smooth Newt</h3>
+				<p>Content Here</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/great-crested-newt.jpg' %}">
+				<h3>Great Crested Newt</h3>
+				<p>Content Here</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="fish" id="fish">
+	<div class="container">
+		<h2>Fish</h2>
+		<hr>
+		<div class="row">
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/three-spined-stickleback.jpg' %}">
+				<h3>Three Spined Stickleback</h3>
+				<p>Very common all along  the conduit from Nine wells to the conduit head. Great shoals of them can be seen all through the year. Max length 50 mm. Midge larvae and chironomids are the main food item.  Breeding starts in April when the brightly coloured males become very territorial.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/ten-spined-stickleback.jpg' %}">
+				<h3>Ten spined Stickleback</h3>
+				<p>Less common than the three spined, this fish can have between eight and twelve spines and more secretive in nature. This species is occasionally seen along most of the conduit. It is mostly up to 50mm long, but can occasionally grow larger.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/millers-thumb.jpg' %}">
+				<h3>Millers Thumb</h3>
+				<p>Also known as the Bullhead is found mostly in the middle to upper reaches of the conduit. The colouration can vary greatly and matches the surroundings. The maximum size is 60 to 80 mm.  Its eats a wide range of food including insects and other invertebrates.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/minnow.jpg' %}">
+				<h3>Minnow</h3>
+				<p>A  resident of the conduit that is far less common than the three spined stickleback. Can form large shoals. Max length 80 mm.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/stone-loach.jpg' %}">
+				<h3>Stone Loach</h3>
+				<p>CThe largest of the fish commonly found in the conduit. Max length 140 mm. Bottom feeding fish which eats a wide diet of invertebrate prey.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="invertebrates" id="invertebrates">
+	<div class="container">
+		<h2>Invertebrates</h2>
+		<hr>
+		<div class="row">
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/notonectid.jpg' %}">
+				<h3>Notonectid</h3>
+				<p>The Greater Waterboatman (Notonecta) swims upside down and is a voracious predator with piercing mouthparts.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/great-diving-beetle.jpg' %}">
+				<h3>Great Diving Beetle</h3>
+				<p>The Great Diving beetle (Dytiscus) is a predator of small fish and other invertebrates</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/mayfly.jpg' %}">
+				<h3>Mayfly</h3>
+				<p>Adults of the Mayfly (eg. Baetis) are often seen flying above the brook in summer.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/ramshorn-snail.jpg' %}">
+				<h3>The Ramshorn Snail</h3>
+				<p>The Ramshorn snail (eg. Planorbis) is often seen grazing algae from aquatic plants at the water’s edge.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/pondskater.jpg' %}">
+				<h3>The Pondskater</h3>
+				<p>The Pond Skater (Gerris) forages for food on the water surface.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="plants" id="plants">
+	<div class="container">
+		<h2>Plants</h2>
+		<hr>
+		<div class="row">
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/water-violet.jpg' %}">
+				<h3>Water Violet (Hottonia palustris)</h3>
+				<p>An aquatic relative of the Primrose, grows in still or slow moving shallow water, spreads by stems rooting to form large patches. The Conduit is notable for its population of Water Violet.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/willow-herb.jpg' %}">
+				<h3>Great Hairy Willowherb (Epilobium hirsutum)</h3>
+				<p>Grows in dense patches on the Conduit’s banks, spreading by rhizomes but spreads further afield by wind-borne seeds.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/purple-loosestrife.jpg' %}">
+				<h3>Purple Loosestrife (Lythrum salicaria)</h3>
+				<p>This grows on the banks of the Conduit. It produces large amounts of seed and spreads rapidly; it was introduced into N America where it has become an invasive weed.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/yellow-loosestrife.jpg' %}">
+				<h3>Yellow Loosestrife (Lysimachia vulgaris)</h3>
+				<p>Another Primrose relative, its flowers produce oil rather than nectar.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/carex-pendula.jpg' %}">
+				<h3>Pendulous Sedge (Carex pendula)</h3>
+				<p>This forms dense tussocks on the bank; a plant of damp woodland it can cope with shade. The flowers are in separate male and female dangly spikes.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/yellow-flag.jpg' %}">
+				<h3>Yellow Flag (Iris pseudacorus)</h3>
+				<p>A yellow flowered bumble-bee pollinated wetland Iris. The leaves are toxic so live stock tend not to eat it.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/phragmites.jpg' %}">
+				<h3>Common Reed (Phragmites australis)</h3>
+				<p>Common Reed grows both on the Conduit bank and in the water. This is the reed used in thatching.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/callitriche.jpg' %}">
+				<h3>Water Starwort (Callitriche sp)</h3>
+				<p>Water Starwort roots in the mud of the Conduit, its shoots forming floating starry rosettes. There are a number of species which are difficult to tell apart.</p>
+			</div>
+			<div class="col-md-4 wildlife-card">
+				<img src="{% static 'img/gypsywort.jpg' %}">
+				<h3>Gypsywort (Lycopus europaeus)</h3>
+				<p>Gypsywort grows by the conduit low down near the water.</p>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

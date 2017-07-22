@@ -1,23 +1,28 @@
 {% load staticfiles %}
+{% load tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>HCT | {% block title %}{% endblock %}</title>
-	<link rel="stylesheet" type="text/css" href="{% static '/css/main.min.css'%}">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <title>HCT | {% block title %}{% endblock %}</title>
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{% static '/css/main.min.css'%}">
+    
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	{% block head %}
-	{% endblock %}
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="https://use.fontawesome.com/419da6d1a5.js"></script>
+  
+  {% block head %}
+  {% endblock %}
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+  <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -33,16 +38,24 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#about">About</a>
+                        <a class="{% if request.resolver_match.url_name == 'trust' %} active {% endif %}" href="{% url 'trust' %}">Trust</a>
                     </li>
                     <li>
-                        <a class="{% if request.resolver_match.url_name == 'trust' %} active {% endif %}" href="{% url 'trust' %}">The Trust</a>
+                        <a class="{% if request.resolver_match.url_name == 'conduit' %} active {% endif %}" href="{% url 'conduit' %}">Conduit</a>
                     </li>
                     <li>
-                        <a href="#contact">The Conduit</a>
+                        <a class="{% if request.resolver_match.url_name == 'location' %} active {% endif %}" href="{% url 'location' %}">Location</a>
                     </li>
-                    <li>
-                        <a href="#wildlife">The Wildlife</a>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle {% if request.resolver_match.url_name == 'wildlife' %} active {% endif %}" href="{% url 'wildlife' %}">Wildlife <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="/wildlife/#mammals">Mammals</a></li>
+                          <li><a href="/wildlife/#birds">Birds</a></li>
+                          <li><a href="/wildlife/#reptiles">Reptiles and Amphibians</a></li>
+                          <li><a href="/wildlife/#fish">Fish</a></li>
+                          <li><a href="/wildlife/#invertebrates">Invertebrates</a></li>
+                          <li><a href="/wildlife/#plants">Plants</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -50,7 +63,14 @@
         </div>
         <!-- /.container -->
     </nav>
-	{% block content %}
-	{% endblock %}
+  {% block content %}
+  {% endblock %}
+
+  <footer>
+    <div class="col-md-3">
+      <p class="body-text">Hobson's Conduit Trust </p>
+      <p class="body-text">&copy; {% get_year %}</p>
+    </div>
+  </footer>
 </body>
 </html>

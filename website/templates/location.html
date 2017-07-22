@@ -1,1 +1,68 @@
-<h1>Location</h1>
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+	Home Page
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+	<div class="trust-hero">
+		<h1>The Location</h1>
+		<hr>
+		<p><em>Where is it and what's along the conduit<em></p>
+	</div>
+</section>
+<section class="route">
+	<div class="container">
+		<h2>Start to finish</h2>
+		<hr>
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Nine Wells</h3>
+				<p class="body-text">Ut aliquet sed dolor vel consectetur. Mauris elementum semper purus non volutpat. Integer dui urna, auctor eget egestas nec, accumsan non orci. Nam egestas lectus odio, nec egestas lorem dignissim in. Mauris rhoncus quis nisl ac varius. Cras sodales non neque id pulvinar. Vivamus efficitur, neque vel faucibus varius, enim diam ullamcorper nibh, malesuada facilisis ligula augue at diam. Fusce fringilla purus leo, nec porta lorem hendrerit et. Fusce sagittis nulla velit, a consequat nisl ullamcorper et. Etiam justo mi, efficitur nec dolor in, ornare fermentum enim. Curabitur semper ipsum quis tellus tincidunt egestas. Aliquam eu auctor arcu. Suspendisse vulputate leo in suscipit eleifend. Curabitur sit amet magna ornare, pulvinar ipsum vitae, rutrum risus.</p>
+			</div>
+			<div class="col-md-6">
+				<img src="http://via.placeholder.com/300x300">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Conduit Head</h3>
+				<p class="body-text">Aliquam ornare, ante vel tincidunt malesuada, nunc quam eleifend felis, ac scelerisque massa risus viverra felis. Curabitur elementum tristique arcu, a congue metus commodo in. Praesent viverra quis risus vel rutrum. Praesent posuere justo fringilla, tempor orci eu, fermentum felis. Nulla ut libero vitae mauris luctus posuere et eu ligula. Donec pharetra dui nisl, et rhoncus lectus ullamcorper nec. Nullam sagittis elit neque, at dignissim metus rhoncus a. Donec ac eleifend felis. Etiam quis mauris mattis, aliquam est eu, blandit tortor. Donec at blandit ipsum, sed accumsan lectus. Etiam malesuada tempus odio quis porta. Sed faucibus lacinia ante, tincidunt vulputate ipsum iaculis at. Nullam consectetur, tortor maximus scelerisque sollicitudin, neque mauris interdum mauris, sit amet luctus nisi sem eget est. Pellentesque tortor sapien, aliquet a diam quis, ultrices tempus nulla. Cras in lobortis nunc. Praesent ultrices eget velit facilisis sagittis.</p>
+			</div>
+			<div class="col-md-6">
+				<img src="http://via.placeholder.com/300x300">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Underground</h3>
+				<p class="body-text">Proin efficitur molestie tellus, ut sagittis purus commodo ac. Curabitur sed nunc a metus tempus vestibulum sed quis arcu. Nullam id enim dictum, varius est sed, vestibulum tellus. Pellentesque ultrices tortor non purus congue, eu posuere ante malesuada. Nullam tincidunt varius dictum. Nullam varius tortor ante, et convallis purus bibendum eget. Fusce id varius odio, a tincidunt libero. Vestibulum commodo, mi ut mattis sagittis, nisl tortor gravida nisi, id imperdiet erat mi vel mauris. Aliquam nunc lorem, sodales venenatis nisl quis, tristique rutrum neque.</p>
+			</div>
+			<div class="col-md-6">
+				<img src="http://via.placeholder.com/300x300">
+			</div>
+		</div>
+	</div>
+</section>
+<section class="parking">
+	<div class="container">
+		<h2>Parking and Points of interest</h2>
+		<hr>
+		<div class="row">
+			<div class="col-md-9">
+				<p class="intro-text">There are several places to park along the route see the map below. There are also a couple of pubs along the route which serve tasty brew</p>
+			</div>
+		</div>
+		<div class="map" id="map"></div>
+	</div>
+</section>
+
+<script type="text/javascript" src="{% static '/js/map.js'%}"></script>  
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHJabr5ltk6WnDcKse-XlU5DroKvWripA&callback=initMap"
+    async defer></script>
+{% endblock %}

@@ -5,5 +5,98 @@
 	Home Page
 {% endblock %}
 
+{% block head %}
+{% endblock %}
+
 {% block content %}
+<section class="hero">
+	<div class="home-hero">
+		<h1>Hobson's Conduit Trust</h1>
+		<hr>
+		<p><em>Bringing fresh water into the city of Cambridge<br>since 1614<em></p>
+	</div>
+</section>
+<section class="about">
+	<div class="container about-container">
+		<h2>What is the Hobson's Conduit Trust</h2>
+		<hr>
+		<div class="row">
+			<div class="col-md-6">
+				<img class="img-reponsive about-img" src="http://via.placeholder.com/300x300">
+			</div>
+			<div class="col-md-6">
+				<p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in odio nibh. Nulla non purus tempus, vestibulum libero eget, ultrices lorem. Vestibulum at tristique urna. Nam ut libero in mi euismod rutrum ac at magna.</p>
+				<p class="body-copy">Pellentesque ac neque ante. Vestibulum tempus et velit sit amet tempus. Fusce vel faucibus velit. Vivamus imperdiet, diam ac interdum tempor, est ipsum rutrum lacus, a bibendum urna nunc quis quam. Donec hendrerit ullamcorper turpis, a tempus nunc dapibus quis. Maecenas pellentesque tortor arcu, sit amet blandit risus condimentum in. Donec et justo nec justo egestas hendrerit posuere at felis. Etiam in feugiat purus, eget finibus turpis. Fusce luctus justo purus, ac tempus nisl mollis sit amet. Proin venenatis luctus lacus vel condimentum.</p>
+				<a class="deep-link" href=""><p>Find out about the more about the Conduit  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+				<a class="deep-link" href=""><p>Get involved with Hobson's Conduit Trust  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="where">
+	<div class="container">
+		<h2>Where is Hobson's Conduit</h2>
+		<hr>
+		<div class="row">
+			<div class="col-md-9">
+				<p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in odio nibh. Nulla non purus tempus, vestibulum libero eget, ultrices lorem. Vestibulum at tristique urna. Nam ut libero in mi euismod rutrum ac at magna.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<a class="deep-link" href=""><p>Find out about what's along the conduit  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+				<a class="deep-link" href=""><p>Where can I park?  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+				<a class="deep-link" href=""><p>Potential hazards along the conduit  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+			</div>
+		</div>
+		<div class="map" id="map"></div>
+	</div>
+</section>
+
+<section class="wildlife">
+	<div class="container">
+		<h2>Flora and Fauna along Hobson's Conduit</h2>
+		<hr>
+		<div class="row">
+			<div class="col-md-9">
+				<p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in odio nibh. Nulla non purus tempus, vestibulum libero eget, ultrices lorem. Vestibulum at tristique urna. Nam ut libero in mi euismod rutrum ac at magna.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class='col-md-4'>
+				<img src="http://via.placeholder.com/300x300">
+				<a href="/wildlife/#mammals"><h3>Mammals <i class="fa fa-angle-right" aria-hidden="true"></i></h3></a>
+			</div>
+			<div class='col-md-4'>
+				<img src="http://via.placeholder.com/300x300">
+				<a href="/wildlife/#birds"><h3>Birds <i class="fa fa-angle-right" aria-hidden="true"></i></h3></a>
+			</div>
+			<div class='col-md-4'>
+				<img src="http://via.placeholder.com/300x300">
+				<a href="/wildlife/#reptiles"><h3>Reptiles and Amphibians <i class="fa fa-angle-right" aria-hidden="true"></i></h3></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class='col-md-4'>
+				<img src="http://via.placeholder.com/300x300">
+				<a href="/wildlife/#fish"><h3>Fish <i class="fa fa-angle-right" aria-hidden="true"></i></h3></a>
+			</div>
+			<div class='col-md-4'>
+				<img src="http://via.placeholder.com/300x300">
+				<a href="/wildlife/#invertebrates"><h3>Invertebrates <i class="fa fa-angle-right" aria-hidden="true"></i></h3></a>
+			</div>
+			<div class='col-md-4'>
+				<img src="http://via.placeholder.com/300x300">
+				<a href="/wildlife/#plants"><h3>Plants <i class="fa fa-angle-right" aria-hidden="true"></i></h3></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript" src="{% static '/js/map.js'%}"></script>  
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHJabr5ltk6WnDcKse-XlU5DroKvWripA&callback=initMap"
+    async defer></script>
+
+
 {% endblock %}

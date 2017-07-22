@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from website.views import index, trust, location, wildlife
+from website.views import index, trust, location, wildlife, conduit
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^trust/$', trust, name="trust"),
     url(r'^location/$', location, name="location"),
     url(r'^wildlife/$', wildlife, name="wildlife"),
+    url(r'^conduit/$', conduit, name="conduit"),
 ]

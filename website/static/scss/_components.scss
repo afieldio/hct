@@ -1,0 +1,87 @@
+body {
+	font-style: normal;
+}
+
+h1 {
+	font-family: 'mission_gothicblack';
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 3em;
+	font-family: 'mission_gothicthin_italic';
+	padding-top: 60px;
+}
+
+h3 {
+	margin-top: 0px;
+}
+
+h4 {
+
+}
+
+.intro-text {
+	font-family: 'mission_gothicbold';
+	font-size: 1.7em;
+	font-style: normal;
+}
+
+.body-text {
+	font-family: 'mission_gothiclight';
+	font-size: 1.5em;
+	font-style: normal;
+}
+
+.map {
+	width: 100%;
+	height: 500px;
+}
+
+.row {
+	padding-bottom: 40px;
+}
+
+footer {
+	background-color: gray;
+	height:200px;
+}
+
+.deep-link {
+		font-style: normal;
+		font-size: 1.6em;
+		font-family: 'mission_gothicregular';
+}
+
+img {
+	width: 100%;
+}
+
+@mixin hero-section() {
+	width: 100%;
+	height: 600px;
+	background-size: cover;
+	color: white;
+
+	h1 {
+		display: block;
+		text-align: center;
+		padding-top: 250px;
+		width: auto;
+		margin: 0px auto;
+		font-family: 'mission_gothicbold';
+		font-size: 5em;
+	}
+
+	hr {
+		width: 20%;
+		height: 5px;
+		background-color: white;
+	}
+
+	p {
+		text-align: center;
+		font-size: 2em;
+		font-family: 'mission_gothicthin_italic';
+	}
+}

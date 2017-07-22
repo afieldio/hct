@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adam Field",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afieldio/hct.git"
+  },
+  "bugs": {
+    "url": "https://github.com/afieldio/hct/issues"
+  },
+  "homepage": "https://github.com/afieldio/hct#readme"
 }
