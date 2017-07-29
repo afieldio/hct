@@ -51,6 +51,8 @@ function initMap() {
 	});
 
 	conduitPath.setMap(map);
+
+	if (true) {}
 }
 
 
