@@ -23,18 +23,35 @@ function initMap() {
 		new google.maps.LatLng(52.16640824643529, 0.1355339050293196),
 	]
 
-	var parkingData = [
-		new google.maps.LatLng(52.20625227354752, 0.12078523635864258),
-		new google.maps.LatLng(52.20625227354752, 0.12078523635864258),
-		new google.maps.LatLng(52.20625227354752, 0.12078523635864258),
-	]
+	var features = [
+		{
+			position: new google.maps.LatLng(52.20625227354752, 0.12078523635864258),
+			type: 'parking',
+			title: 'Nine Wells Parking',
+			content: '<div id="content"><div id="siteNotice"></div><div id="bodyContent"><h1>Nine Wells Parking</h1></div></div>'
+		},
+		{
+			position: new google.maps.LatLng(52.23635427354752, 0.14078523635864258),
+			type: 'parking',
+			title: 'Cambridge City Center Parking',
+			content: '<div id="content"><div id="siteNotice"></div><div id="bodyContent"><h1>Cambridge City Center Parking</h1></div></div>'
+		},
+		{
+			position: new google.maps.LatLng(52.16640824643529, 0.1355339050293196),
+			type: 'pub',
+			title: 'The George and Dragon',
+			content: '<div id="content"><div id="siteNotice"></div><div id="bodyContent"><h1>The Pub</h1></div></div>'
+		},
+	];
 
-	var pubData = [
-		new google.maps.LatLng(52.20625227354752, 0.12078523635864258),
-		new google.maps.LatLng(52.20625227354752, 0.12078523635864258),
-		new google.maps.LatLng(52.20625227354752, 0.12078523635864258),
-		new google.maps.LatLng(52.20625227354752, 0.12078523635864258),
-	]
+	var icons = {
+		parking: {
+			icon: '/static/img/parking-pin.svg'
+		},
+		pub: {
+			icon: '/static/img/drink-pin.svg'
+		},
+	};
 	// Create a map object and specify the DOM element for display.
 	var map = new google.maps.Map(document.getElementById('map'), {
 	  center: myLatLng,
@@ -52,8 +69,29 @@ function initMap() {
 
 	conduitPath.setMap(map);
 
-	if (true) {}
+	var pathArray = window.location.pathname.split( '/' );
+	console.log(pathArray[1]);
+
+	if(pathArray[1] == 'location'){
+		features.forEach(function(feature) {
+				var marker = new google.maps.Marker({
+				position: feature.position,
+				icon: icons[feature.type].icon,
+				map: map,
+				
+			});
+			var infowindow = new google.maps.InfoWindow({
+				content: feature.content
+			});
+			marker.addListener('click', function() {
+				infowindow.open(map, marker);
+			});
+		});
+	}
+
+
 }
+
 
 
 

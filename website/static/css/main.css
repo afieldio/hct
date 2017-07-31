@@ -444,6 +444,9 @@ h2 {
 h3 {
   margin-top: 0px; }
 
+.nav li a.active {
+  color: blue; }
+
 .intro-text {
   font-family: 'mission_gothicbold';
   font-size: 1.7em;
@@ -462,8 +465,11 @@ h3 {
   padding-bottom: 40px; }
 
 footer {
-  background-color: gray;
-  height: 200px; }
+  background-color: #f8f8f8;
+  height: 200px;
+  text-align: center; }
+  footer .footer-info {
+    padding-top: 75px; }
 
 .deep-link {
   font-style: normal;
