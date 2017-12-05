@@ -17,14 +17,11 @@ def history(request):
 def trust(request):
     return render(request, 'trust.html')
 
-
-def conduit(request):
-    return render(request, 'conduit.html')
-
+def water(request):
+    return render(request, 'water.html')
 
 def location(request):
     return render(request, 'location.html')
-
 
 def wildlife(request):
     return render(request, 'wildlife.html')
