@@ -9,7 +9,7 @@
 */
 
 .home-hero {
-	background: 
+	background:
 	linear-gradient(
 	  rgba(0, 0, 0, 0.3),
 	  rgba(0, 0, 0, 0.3)
@@ -18,7 +18,7 @@
 }
 
 .trust-hero {
-	background: 
+	background:
 	linear-gradient(
 	  rgba(0, 0, 0, 0.3),
 	  rgba(0, 0, 0, 0.3)
@@ -27,10 +27,18 @@
 }
 
 .about {
+	background-color: #f8f8f8;
 	.about-container {
 		.about-img {
 			width: 100%;
 		}
+	}
+}
+
+.where {
+	background-color: #f8f8f8;
+	.map {
+		margin-bottom: 40px;
 	}
 }
 
@@ -52,4 +60,3 @@
 		}
 	}
 }
-

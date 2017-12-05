@@ -438,8 +438,10 @@ h1 {
 
 h2 {
   font-size: 3em;
-  font-family: 'mission_gothicthin_italic';
-  padding-top: 60px; }
+  text-align: center;
+  font-family: 'mission_gothicthin';
+  padding-top: 60px;
+  padding-bottom: 60px; }
 
 h3 {
   margin-top: 0px; }
@@ -530,8 +532,15 @@ img {
     font-size: 2em;
     font-family: 'mission_gothicthin_italic'; }
 
-.about .about-container .about-img {
-  width: 100%; }
+.about {
+  background-color: #f8f8f8; }
+  .about .about-container .about-img {
+    width: 100%; }
+
+.where {
+  background-color: #f8f8f8; }
+  .where .map {
+    margin-bottom: 40px; }
 
 .wildlife img {
   width: 100%; }

@@ -18,17 +18,34 @@
 </section>
 <section class="about">
 	<div class="container about-container">
-		<h2>What is the Hobson's Conduit Trust</h2>
-		<hr>
+		<h2>What is Hobson's Conduit Trust?</h2>
 		<div class="row">
 			<div class="col-md-6">
-				<img class="img-reponsive about-img" src="http://via.placeholder.com/300x300">
-			</div>
-			<div class="col-md-6">
-				<p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in odio nibh. Nulla non purus tempus, vestibulum libero eget, ultrices lorem. Vestibulum at tristique urna. Nam ut libero in mi euismod rutrum ac at magna.</p>
-				<p class="body-copy">Pellentesque ac neque ante. Vestibulum tempus et velit sit amet tempus. Fusce vel faucibus velit. Vivamus imperdiet, diam ac interdum tempor, est ipsum rutrum lacus, a bibendum urna nunc quis quam. Donec hendrerit ullamcorper turpis, a tempus nunc dapibus quis. Maecenas pellentesque tortor arcu, sit amet blandit risus condimentum in. Donec et justo nec justo egestas hendrerit posuere at felis. Etiam in feugiat purus, eget finibus turpis. Fusce luctus justo purus, ac tempus nisl mollis sit amet. Proin venenatis luctus lacus vel condimentum.</p>
+				<p class="intro-text">Hobson’s Conduit Trust was set up by Thomas Hobson to maintain good quality water flow from Nine Wells into Cambridge.</p>
+				<p class="body-text">In 1614, a collaboration between Cambridge City, Cambridge University and the Mayor of Trumpington built a ‘new river’ diverting clean water from Vicar’s Brook in Trumpington into Cambridge. The aim was to reduce the risks of infection following drinking contaminated water.</p>
+				<p class="body-text">This ‘new river’ delivered uncontaminated water to some colleges and Cambridge market square. In his will of 1631, Hobson provided funds to set up the Trust that bears his name to maintain the quantity and quality of the water flow.</p>
+				<p class="body-text">This website gives information about the history of the waterway, the Trust and its role today.</p>
 				<a class="deep-link" href=""><p>Find out about the more about the Conduit  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
 				<a class="deep-link" href=""><p>Get involved with Hobson's Conduit Trust  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+			</div>
+			<div class="col-md-6">
+				<img class="img-reponsive about-img" src="{% static 'img/hobsons-conduit-head.JPG' %}">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="trust">
+	<div class="container trust-container">
+		<h2>Hobson's Conduit - a brief history.</h2>
+		<div class="row">
+			<div class="col-md-6">
+				<p class="body-text">Until the late 1500’s there was little or no fresh water for most Cambridge residents because the river and one of its man made tributaries (the King’s Ditch) were essentially sewers.</p>
+				<p class="body-text">Infections, including the repeated attacks of plague, were common causes of death in Cambridge. It was thought that contaminated water in the river and King’s Ditch was the cause of these infections.</p>
+				<a class="deep-link" href=""><p>Check out the History page for more information <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+			</div>
+			<div class="col-md-6">
+				<img class="img-reponsive about-img" src="{% static 'img/hobsons-old-map.jpg' %}">
 			</div>
 		</div>
 	</div>
@@ -37,16 +54,16 @@
 <section class="where">
 	<div class="container">
 		<h2>Where is Hobson's Conduit</h2>
-		<hr>
 		<div class="row">
 			<div class="col-md-9">
-				<p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in odio nibh. Nulla non purus tempus, vestibulum libero eget, ultrices lorem. Vestibulum at tristique urna. Nam ut libero in mi euismod rutrum ac at magna.</p>
+				<p class="intro-text">The water in Hobson’s brook runs above ground from the Nine Wells Nature Reserve, south of Cambridge (CB22 5JY) flowing North towards the Conduit Head at the bottom of Lensfield Road (CB2 1PY).</p>
+				<p class="body-text">The stream passes west of Addenbrooke’s Hospital (CB2 0QQ), under Long Road and Brookland’s Avenue, beside the western end of the Botanic Garden (CB2 1JE).  Finally the water flows under Bateman Street between Trumpington Road and Brookside, terminating at the Conduit Head.<p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<a class="deep-link" href=""><p>Find out about what's along the conduit  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
-				<a class="deep-link" href=""><p>Where can I park?  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+				<a class="deep-link" href=""><p>What's along the conduit  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+				<a class="deep-link" href=""><p>Where can I park  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
 				<a class="deep-link" href=""><p>Potential hazards along the conduit  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
 			</div>
 		</div>
@@ -57,44 +74,43 @@
 <section class="wildlife">
 	<div class="container">
 		<h2>Flora and Fauna along Hobson's Conduit</h2>
-		<hr>
 		<div class="row">
 			<div class="col-md-9">
-				<p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in odio nibh. Nulla non purus tempus, vestibulum libero eget, ultrices lorem. Vestibulum at tristique urna. Nam ut libero in mi euismod rutrum ac at magna.</p>
+				<p class="intro-text">The above ground section of Hobson’s Brook from Nine Wells to Cambridge supports a variety of plant and animal life much of which may be seen with the naked eye during a visit. This list represents of some of the commonest wildlife to be seen along the water course. More information about animal and plant species in and around the Brook can be found at the Bioblitz pages.</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class='col-md-4'>
-				<img src="http://via.placeholder.com/300x300">
+				<img src="{% static 'img/mammal-water-vole.jpg' %}">
 				<a href="/wildlife/#mammals"><h3>Mammals <i class="fa fa-angle-right" aria-hidden="true"></i></h3></a>
 			</div>
 			<div class='col-md-4'>
-				<img src="http://via.placeholder.com/300x300">
+				<img src="{% static 'img/bird-heron.jpg' %}">
 				<a href="/wildlife/#birds"><h3>Birds <i class="fa fa-angle-right" aria-hidden="true"></i></h3></a>
 			</div>
 			<div class='col-md-4'>
-				<img src="http://via.placeholder.com/300x300">
+				<img src="{% static 'img/reptile-newt.jpg' %}">
 				<a href="/wildlife/#reptiles"><h3>Reptiles and Amphibians <i class="fa fa-angle-right" aria-hidden="true"></i></h3></a>
 			</div>
 		</div>
 		<div class="row">
 			<div class='col-md-4'>
-				<img src="http://via.placeholder.com/300x300">
+				<img src="{% static 'img/fish-vetmenudi.jpg' %}">
 				<a href="/wildlife/#fish"><h3>Fish <i class="fa fa-angle-right" aria-hidden="true"></i></h3></a>
 			</div>
 			<div class='col-md-4'>
-				<img src="http://via.placeholder.com/300x300">
+				<img src="{% static 'img/invert-water-boat.jpg' %}">
 				<a href="/wildlife/#invertebrates"><h3>Invertebrates <i class="fa fa-angle-right" aria-hidden="true"></i></h3></a>
 			</div>
 			<div class='col-md-4'>
-				<img src="http://via.placeholder.com/300x300">
+				<img src="{% static 'img/plant-medow.jpg' %}">
 				<a href="/wildlife/#plants"><h3>Plants <i class="fa fa-angle-right" aria-hidden="true"></i></h3></a>
 			</div>
 		</div>
 	</div>
 </section>
 
-<script type="text/javascript" src="{% static 'js/map.js'%}"></script>  
+<script type="text/javascript" src="{% static 'js/map.js'%}"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHJabr5ltk6WnDcKse-XlU5DroKvWripA&callback=initMap"
     async defer></script>
 
