@@ -1,5 +1,4 @@
 @import "normalize";
-@import "fonts";
 @import "components";
 
 /*
@@ -51,7 +50,7 @@
 .objectives {
 	.objectives-title {
 		text-align: center;
-		font: 'mission_gothiclight';
+		font-family: 'Roboto';
 		font-style: normal;
 	}
 	.objectives-list {
@@ -59,4 +58,9 @@
 			padding-top: 40px;
 		}
 	}
+}
+
+
+.polycell {
+	max-height: 300px;
 }
