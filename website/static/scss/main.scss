@@ -21,7 +21,43 @@
 	linear-gradient(
 	  rgba(0, 0, 0, 0.3),
 	  rgba(0, 0, 0, 0.3)
-	), url('../img/hct2.png') center center no-repeat;
+	), url('../img/trust_hero.png') center center no-repeat;
+	@include hero-section();
+}
+
+.location-hero {
+	background:
+	linear-gradient(
+	  rgba(0, 0, 0, 0.3),
+	  rgba(0, 0, 0, 0.3)
+	), url('../img/location_hero.png') center center no-repeat;
+	@include hero-section();
+}
+
+.history-hero {
+	background:
+	linear-gradient(
+	  rgba(0, 0, 0, 0.3),
+	  rgba(0, 0, 0, 0.3)
+	), url('../img/history_hero.png') center center no-repeat;
+	@include hero-section();
+}
+
+.wildlife-hero {
+	background:
+	linear-gradient(
+	  rgba(0, 0, 0, 0.3),
+	  rgba(0, 0, 0, 0.3)
+	), url('../img/wildlife_hero.png') center center no-repeat;
+	@include hero-section();
+}
+
+.water-hero {
+	background:
+	linear-gradient(
+	  rgba(0, 0, 0, 0.3),
+	  rgba(0, 0, 0, 0.3)
+	), url('../img/water_hero.png') center center no-repeat;
 	@include hero-section();
 }
 

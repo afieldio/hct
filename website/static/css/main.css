@@ -459,7 +459,7 @@ img {
     font-weight: 200; }
 
 .trust-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/hct2.png") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/trust_hero.png") center center no-repeat;
   width: 100%;
   height: 600px;
   background-size: cover;
@@ -476,6 +476,98 @@ img {
     height: 5px;
     background-color: white; }
   .trust-hero p {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Roboto';
+    font-weight: 200; }
+
+.location-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/location_hero.png") center center no-repeat;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  color: white; }
+  .location-hero h1 {
+    display: block;
+    text-align: center;
+    padding-top: 250px;
+    width: auto;
+    margin: 0px auto;
+    font-size: 5em; }
+  .location-hero hr {
+    width: 20%;
+    height: 5px;
+    background-color: white; }
+  .location-hero p {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Roboto';
+    font-weight: 200; }
+
+.history-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/history_hero.png") center center no-repeat;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  color: white; }
+  .history-hero h1 {
+    display: block;
+    text-align: center;
+    padding-top: 250px;
+    width: auto;
+    margin: 0px auto;
+    font-size: 5em; }
+  .history-hero hr {
+    width: 20%;
+    height: 5px;
+    background-color: white; }
+  .history-hero p {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Roboto';
+    font-weight: 200; }
+
+.wildlife-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/wildlife_hero.png") center center no-repeat;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  color: white; }
+  .wildlife-hero h1 {
+    display: block;
+    text-align: center;
+    padding-top: 250px;
+    width: auto;
+    margin: 0px auto;
+    font-size: 5em; }
+  .wildlife-hero hr {
+    width: 20%;
+    height: 5px;
+    background-color: white; }
+  .wildlife-hero p {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Roboto';
+    font-weight: 200; }
+
+.water-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/water_hero.png") center center no-repeat;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  color: white; }
+  .water-hero h1 {
+    display: block;
+    text-align: center;
+    padding-top: 250px;
+    width: auto;
+    margin: 0px auto;
+    font-size: 5em; }
+  .water-hero hr {
+    width: 20%;
+    height: 5px;
+    background-color: white; }
+  .water-hero p {
     text-align: center;
     font-size: 2em;
     font-family: 'Roboto';
