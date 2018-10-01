@@ -8,15 +8,22 @@
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Spectral+SC" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css'%}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Spectral+SC" rel="stylesheet">
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
   <script src="https://use.fontawesome.com/419da6d1a5.js"></script>
+
+  <script type="text/javascript">
+    $('.dropdown-toggle').click(function() {
+        var location = $(this).attr('href');
+        window.location.href = {% url 'wildlife' %};
+        console.log("THIS" + location)
+    });
+  </script>
 
   {% block head %}
   {% endblock %}
@@ -32,7 +39,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="{% url 'index' %}">HCT Logo</a>
+                <a class="navbar-brand topnav center" href="{% url 'index' %}">Hobson's Conduit Trust</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -49,16 +56,8 @@
                     <li>
                         <a class="{% if request.resolver_match.url_name == 'location' %}active{% endif %}" href="{% url 'location' %}">Location</a>
                     </li>
-                    <li class="dropdown">
-                        <a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle {% if request.resolver_match.url_name == 'wildlife' %}active{% endif %}" href="{% url 'wildlife' %}">Wildlife <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="/wildlife/#mammals">Mammals</a></li>
-                          <li><a href="/wildlife/#birds">Birds</a></li>
-                          <li><a href="/wildlife/#reptiles">Reptiles and Amphibians</a></li>
-                          <li><a href="/wildlife/#fish">Fish</a></li>
-                          <li><a href="/wildlife/#invertebrates">Invertebrates</a></li>
-                          <li><a href="/wildlife/#plants">Plants</a></li>
-                        </ul>
+                    <li>
+                        <a class="{% if request.resolver_match.url_name == 'wildlife' %}active{% endif %}" href="{% url 'wildlife' %}">Wildlife</a>
                     </li>
                 </ul>
             </div>

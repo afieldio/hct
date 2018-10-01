@@ -25,8 +25,8 @@
 				<p class="body-text">In the early 1600’s, Cambridge was regularly affected by plague and other fatal infections thought to be caused by contaminated water.  A constant supply of fresh drinking water was considered necessary to protect the population.</p>
 				<p class="body-text">Four miles away, the Nine Wells springs in Great Shelford was a source of clean water.  The authorities from Cambridge Town and University collaborated with the Lord of the Manor in Trumpington to create a ‘new river’ to divert some of this fresh water into Cambridge.</p>
 				<p class="body-text">In 1631, Thomas Hobson, whose income came from transporting goods to and from London, bequeathed land to fund and maintain this public water supply - hence the association with his name.  Hobson’s Conduit Trust is now a registered charity, that was established to have rights over the stream and to maintain it in good order for the town and the University.</p>
-				<a class="deep-link" href=""><p>Find out about the more about the Conduit  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
-				<a class="deep-link" href=""><p>Get involved with Hobson's Conduit Trust  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+				<a class="deep-link" href="{% url 'history' %}"><p>Find out about the more about the Conduit  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+				<a class="deep-link" href="{% url 'trust' %}"><p>Get involved with Hobson's Conduit Trust  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
 			</div>
 			<div class="col-md-6">
 				<img class="img-reponsive about-img" src="{% static 'img/hobsons-conduit-head.JPG' %}">
@@ -47,9 +47,8 @@
 		<div class="row">
 			<div class="col-md-6">
 				<h3>More info</h3>
-				<a class="deep-link" href=""><p>What's along the conduit  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
-				<a class="deep-link" href=""><p>Where can I park  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
-				<a class="deep-link" href=""><p>Potential hazards along the conduit  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+				<a class="deep-link" href="{% url 'location' %}"><p>What's along the conduit  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+				<a class="deep-link" href="/location/#hazards"><p>Potential hazards along the conduit  <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
 			</div>
 		</div>
 		<div class="map" id="map"></div>

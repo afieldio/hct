@@ -385,6 +385,11 @@ h3 {
   margin-top: 0px;
   font-style: normal; }
 
+p {
+  font-family: 'Roboto';
+  font-weight: lighter;
+  font-size: 1.2em; }
+
 .nav li a.active {
   color: red; }
 
@@ -605,3 +610,9 @@ cite {
 
 .polycell {
   max-height: 300px; }
+
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
+.dropdown-menu {
+  margin-top: 0px; }
