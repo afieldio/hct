@@ -45,19 +45,22 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="{% if request.resolver_match.url_name == 'history' %}active{% endif %}" href="{% url 'history' %}">History</a>
-                    </li>
-                    <li>
-                        <a class="{% if request.resolver_match.url_name == 'trust' %}active{% endif %}" href="{% url 'trust' %}">Trust</a>
-                    </li>
-                    <li>
-                        <a class="{% if request.resolver_match.url_name == 'water' %}active{% endif %}" href="{% url 'water' %}">Water</a>
+                        <a class="{% if request.resolver_match.url_name == 'index' %}active{% endif %}" href="{% url 'index' %}">Home</a>
                     </li>
                     <li>
                         <a class="{% if request.resolver_match.url_name == 'location' %}active{% endif %}" href="{% url 'location' %}">Location</a>
                     </li>
                     <li>
                         <a class="{% if request.resolver_match.url_name == 'wildlife' %}active{% endif %}" href="{% url 'wildlife' %}">Wildlife</a>
+                    </li>
+                    <li>
+                        <a class="{% if request.resolver_match.url_name == 'water' %}active{% endif %}" href="{% url 'water' %}">Water</a>
+                    </li>
+                    <li>
+                        <a class="{% if request.resolver_match.url_name == 'history' %}active{% endif %}" href="{% url 'history' %}">History</a>
+                    </li>
+                    <li>
+                        <a class="{% if request.resolver_match.url_name == 'trust' %}active{% endif %}" href="{% url 'trust' %}">Trust</a>
                     </li>
                 </ul>
             </div>

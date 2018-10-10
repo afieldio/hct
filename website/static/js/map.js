@@ -25,23 +25,46 @@ function initMap() {
 
 	var features = [
 		{
-			position: new google.maps.LatLng(52.20625227354752, 0.12078523635864258),
+			position: new google.maps.LatLng(52.204006, 0.120749),
 			type: 'parking',
-			title: 'Nine Wells Parking',
-			content: '<div id="content"><div id="siteNotice"></div><div id="bodyContent"><h1>Nine Wells Parking</h1></div></div>'
+			title: 'Grand Arcade Parking',
+			content: '<div id="content"><div id="siteNotice"></div><div id="bodyContent"><strong>Grand Arcade Parking</strong><p>Corn Exchange St, Cambridge CB2 3QF</p></div></div>',
 		},
 		{
-			position: new google.maps.LatLng(52.23635427354752, 0.14078523635864258),
+			position: new google.maps.LatLng(52.177887, 0.137704),
 			type: 'parking',
-			title: 'Cambridge City Center Parking',
-			content: '<div id="content"><div id="siteNotice"></div><div id="bodyContent"><h1>Cambridge City Center Parking</h1></div></div>'
+			title: "Addenbrook's Hospital Car Park 2",
+			content: "<div id='content'><div id='siteNotice'></div><div id='bodyContent'><strong>Addenbrook's Hospital Car Park 2</strong><p>Robinson Way, Cambridge CB2 0SL</p></div></div>",
 		},
 		{
-			position: new google.maps.LatLng(52.16640824643529, 0.1355339050293196),
-			type: 'pub',
-			title: 'The George and Dragon',
-			content: '<div id="content"><div id="siteNotice"></div><div id="bodyContent"><h1>The Pub</h1></div></div>'
+			position: new google.maps.LatLng(52.183034, 0.125538),
+			type: 'parking',
+			title: "Porson Road and Barrow Road",
+			content: "<div id='content'><div id='siteNotice'></div><div id='bodyContent'><strong>Barrow Road and Porson Road</strong><p>Barrow Road, Cambridge CB2 8AS</p><em>Please be aware that there are parking restrictions in this area</em></div></div>",
 		},
+		{
+			position: new google.maps.LatLng(52.160015, 0.137620),
+			type: 'info',
+			title: "Spring Head",
+			content: "<div id='content'><div id='siteNotice'></div><div id='bodyContent'><strong>Spring Head</strong><p>Graham's Road, Cambridge CB22 5JY</p></div></div>",
+		},
+		{
+			position: new google.maps.LatLng(52.168036, 0.107623),
+			type: 'parking',
+			title: "Trumpington Park and Ride",
+			content: "<div id='content'><div id='siteNotice'></div><div id='bodyContent'><strong>Trumpington Park and Ride</strong><p>43 Hauxton Rd, Cambridge CB2 9FT</p></div></div>",
+		},
+		{
+			position: new google.maps.LatLng(52.193281, 0.123275),
+			type: 'parking',
+			title: "Pay and Display - Trumpington Road",
+			content: "<div id='content'><div id='siteNotice'></div><div id='bodyContent'><strong>Pay and Display - Trumpington Road</strong><p>Trumpington Road, Cambridge CB2 8AB</p></div></div>",
+		},
+
+
+
+
+		
 	];
 
 	var icons = {
@@ -51,7 +74,11 @@ function initMap() {
 		pub: {
 			icon: '/static/img/drink-pin.svg'
 		},
+		info: {
+			icon: '/static/img/info-pin.svg'
+		},
 	};
+
 	// Create a map object and specify the DOM element for display.
 	var map = new google.maps.Map(document.getElementById('map'), {
 	  center: myLatLng,
@@ -72,25 +99,23 @@ function initMap() {
 	var pathArray = window.location.pathname.split( '/' );
 	console.log(pathArray[1]);
 
-	if(pathArray[1] == 'location'){
-		features.forEach(function(feature) {
-				var marker = new google.maps.Marker({
-				position: feature.position,
-				icon: icons[feature.type].icon,
-				map: map,
-				
-			});
-			var infowindow = new google.maps.InfoWindow({
-				content: feature.content
-			});
-			marker.addListener('click', function() {
-				infowindow.open(map, marker);
-			});
+	
+	features.forEach(function(feature) {
+			var marker = new google.maps.Marker({
+			position: feature.position,
+			icon: icons[feature.type].icon,
+			map: map,
+			
 		});
-	}
-
-
+		var infowindow = new google.maps.InfoWindow({
+			content: feature.content
+		});
+		marker.addListener('click', function() {
+			infowindow.open(map, marker);
+		});
+	});
 }
+
 
 
 
