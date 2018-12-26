@@ -2,25 +2,36 @@ function initMap() {
 	var myLatLng = new google.maps.LatLng(52.198362,0.144571);
 
 	var pathData = [
-		new google.maps.LatLng(52.20625227354752, 0.12078523635864258),
-		new google.maps.LatLng(52.20560793316631, 0.11870384216308594),
-		new google.maps.LatLng(52.20548072410742, 0.11791715621950516),
-		new google.maps.LatLng(52.20461281981008, 0.11768112182619461),
-		new google.maps.LatLng(52.202824357499516, 0.1186252593994368),
-		new google.maps.LatLng(52.197721584112635, 0.12244472503664383),
-		new google.maps.LatLng(52.19506475368203, 0.12261638641359696),
-		new google.maps.LatLng(52.19222361079005, 0.12420425415041336),
-		new google.maps.LatLng(52.191144981213284, 0.12553462982180008),
-		new google.maps.LatLng(52.17209364978223, 0.12484798431398758),
-		new google.maps.LatLng(52.17068552728821, 0.12484798431398758),
-		new google.maps.LatLng(52.168356105320505, 0.12652168273928055),
-		new google.maps.LatLng(52.16593443002925, 0.1266504287719954),
-		new google.maps.LatLng(52.1643681676729, 0.1277662277221907),
-		new google.maps.LatLng(52.163091425641134, 0.13107070922853836),
-		new google.maps.LatLng(52.16664515274634, 0.13195047378542313),
-		new google.maps.LatLng(52.16657276484065, 0.13263711929323563),
-		new google.maps.LatLng(52.16614501572149, 0.13433227539064774),
-		new google.maps.LatLng(52.16640824643529, 0.1355339050293196),
+		new google.maps.LatLng(52.167003, 0.136246), 
+		new google.maps.LatLng(52.166328, 0.135359),
+		new google.maps.LatLng(52.166092, 0.134277), 
+		new google.maps.LatLng(52.166684, 0.132381), 
+		new google.maps.LatLng(52.166931, 0.131780),
+		new google.maps.LatLng(52.168023, 0.130235),
+		new google.maps.LatLng(52.167075, 0.126694), 
+		new google.maps.LatLng(52.168039, 0.126507),
+		new google.maps.LatLng(52.170826, 0.124892),
+		new google.maps.LatLng(52.177018, 0.124795),   
+		new google.maps.LatLng(52.177820, 0.124795),
+		new google.maps.LatLng(52.181955, 0.126796), 
+		new google.maps.LatLng(52.182968, 0.126581),
+		new google.maps.LatLng(52.183764, 0.127032),
+		new google.maps.LatLng(52.185619, 0.127397),
+		new google.maps.LatLng(52.186737, 0.127139), 
+		new google.maps.LatLng(52.188335, 0.127118),
+		new google.maps.LatLng(52.188763, 0.126796),
+		new google.maps.LatLng(52.189730, 0.126721),
+		new google.maps.LatLng(52.189881, 0.126892),    
+		new google.maps.LatLng(52.190184, 0.126560),
+		new google.maps.LatLng(52.190631, 0.126324),
+		new google.maps.LatLng(52.191170, 0.125605),
+		new google.maps.LatLng(52.191289, 0.125551),  
+		new google.maps.LatLng(52.192236, 0.124200), 
+		new google.maps.LatLng(52.194136, 0.122901),
+		new google.maps.LatLng(52.194880, 0.122569),
+		new google.maps.LatLng(52.195688, 0.122547),
+		new google.maps.LatLng(52.195859, 0.122472),
+		new google.maps.LatLng(52.197891, 0.122386)
 	]
 
 	var features = [
@@ -59,12 +70,7 @@ function initMap() {
 			type: 'parking',
 			title: "Pay and Display - Trumpington Road",
 			content: "<div id='content'><div id='siteNotice'></div><div id='bodyContent'><strong>Pay and Display - Trumpington Road</strong><p>Trumpington Road, Cambridge CB2 8AB</p></div></div>",
-		},
-
-
-
-
-		
+		},		
 	];
 
 	var icons = {
@@ -115,8 +121,3 @@ function initMap() {
 		});
 	});
 }
-
-
-
-
-

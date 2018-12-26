@@ -450,7 +450,7 @@ cite {
 *
 */
 .home-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/home_hero.png") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/home_hero.jpg") center center no-repeat;
   width: 100%;
   height: 600px;
   background-size: cover;
@@ -473,7 +473,7 @@ cite {
     font-weight: 200; }
 
 .trust-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/trust_hero.png") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/trust_hero.jpg") center center no-repeat;
   width: 100%;
   height: 600px;
   background-size: cover;
@@ -496,7 +496,7 @@ cite {
     font-weight: 200; }
 
 .location-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/location_hero.png") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/location_hero.jpg") center center no-repeat;
   width: 100%;
   height: 600px;
   background-size: cover;
@@ -519,7 +519,7 @@ cite {
     font-weight: 200; }
 
 .history-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/history_hero.png") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/history_hero.jpg") center center no-repeat;
   width: 100%;
   height: 600px;
   background-size: cover;
@@ -542,7 +542,7 @@ cite {
     font-weight: 200; }
 
 .wildlife-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/wildlife_hero.png") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/wildlife_hero.jpg") center center no-repeat;
   width: 100%;
   height: 600px;
   background-size: cover;
