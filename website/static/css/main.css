@@ -385,11 +385,8 @@ h3 {
   margin-top: 0px;
   font-style: normal; }
 
-li {
-  font-family: 'Roboto';
-  font-weight: 300;
-  font-size: 1.5em;
-  font-style: normal; }
+h4 {
+  font-weight: bold; }
 
 p {
   font-family: 'Roboto';
@@ -632,7 +629,9 @@ cite {
   font-style: normal; }
 
 .objectives .objectives-list li {
-  padding-top: 40px; }
+  padding-top: 40px;
+  font-weight: 200;
+  font-size: 1em; }
 
 .polycell {
   max-height: 300px; }
