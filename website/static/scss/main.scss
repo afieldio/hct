@@ -1,4 +1,4 @@
-@import "normalize";
+/*@import "normalize";*/
 @import "components";
 
 /*
@@ -61,6 +61,15 @@
 	@include hero-section();
 }
 
+.news-hero{
+	background:
+	linear-gradient(
+	  rgba(0, 0, 0, 0.3),
+	  rgba(0, 0, 0, 0.3)
+	), url('../img/news_hero.jpg') center center no-repeat;
+	@include hero-section();
+}
+
 .about {
 	background-color: #f8f8f8;
 	.about-container {
@@ -97,6 +106,16 @@
 		}
 	}
 }
+
+.hazards-list {
+		li {
+			padding-top: 20px;
+			font-weight: 200;
+			font-size: 1.5em;
+		}
+	}
+
+
 
 
 .polycell {

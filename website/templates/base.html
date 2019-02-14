@@ -8,8 +8,8 @@
   <title>HCT | {% block title %}{% endblock %}</title>
 
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css'%}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Spectral+SC" rel="stylesheet">
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -63,6 +63,9 @@
                     <li>
                         <a class="{% if request.resolver_match.url_name == 'trust' %}active{% endif %}" href="{% url 'trust' %}">Trust</a>
                     </li>
+                    <li>
+                        <a class="{% if request.resolver_match.url_name == 'news' %}active{% endif %}" href="{% url 'news' %}">News</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -75,8 +78,8 @@
   <footer>
     <div class="container">
       <div class="footer-info col-md-4 col-md-offset-4">
-        <p class="body-text">Hobson's Conduit Trust </p>
-        <p class="body-text">&copy; {% get_year %}</p>
+        <p >Hobson's Conduit Trust </p>
+        <p >&copy; {% get_year %}</p>
       </div>
     </div>
   </footer>
