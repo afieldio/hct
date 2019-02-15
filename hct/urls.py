@@ -24,6 +24,6 @@ urlpatterns = [
     url(r'^history/$', history, name="history"),
     url(r'^location/$', location, name="location"),
     url(r'^wildlife/$', wildlife, name="wildlife"),
-    url(r'^water/$', water, name="water"),
+    url(r'^water/$', water, name="water")
     # url(r'^news/$', news, name="news")
 ]
