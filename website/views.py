@@ -26,5 +26,5 @@ def location(request):
 def wildlife(request):
     return render(request, 'wildlife.html')
 
-# def news(request):
-#     return render(request, 'news.html')
+def news(request):
+    return render(request, 'news.html')
