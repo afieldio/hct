@@ -20,7 +20,7 @@ def trust(request):
 def water(request):
     return render(request, 'water.html')
 
-def news(request):
+def testnews(request):
     return render(request, 'news.html')
 
 def location(request):
