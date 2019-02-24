@@ -61,9 +61,6 @@
                         <a class="{% if request.resolver_match.url_name == 'history' %}active{% endif %}" href="{% url 'history' %}">History</a>
                     </li>
                     <li>
-                        <a class="{% if request.resolver_match.url_name == 'news' %}active{% endif %}" href="{% url 'news' %}">News</a>
-                    </li>
-                    <li>
                         <a class="{% if request.resolver_match.url_name == 'trust' %}active{% endif %}" href="{% url 'trust' %}">Trust</a>
                     </li>
                 </ul>
