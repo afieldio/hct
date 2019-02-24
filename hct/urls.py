@@ -15,15 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from website.views import index, history, trust, location, wildlife, water, news
+from website import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', index, name="index"),
-    url(r'^trust/$', trust, name="trust"),
-    url(r'^history/$', history, name="history"),
-    url(r'^location/$', location, name="location"),
-    url(r'^wildlife/$', wildlife, name="wildlife"),
-    url(r'^water/$', water, name="water"),
-    url(r'^news/$', news, name="news"),
+    url(r'^$', views.index, name="index"),
+    url(r'^trust/$', views.trust, name="trust"),
+    url(r'^history/$', views.history, name="history"),
+    url(r'^location/$', views.location, name="location"),
+    url(r'^wildlife/$', views.wildlife, name="wildlife"),
+    url(r'^water/$', views.water, name="water"),
+    url(r'^news/$', views.news, name="news"),
 ]
