@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+	News Page
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+	<div class="news-hero">
+		<h1>Latest News</h1>
+		<hr>
+		<p>Oh, what's occurin?</p>
+	</div>
+</section>
+
+<section class="article-section">
+	<div class="container">
+		<h2>A donation to the museum of Cambridge</h2>
+		<h3>Author: Max Field</h3>
+		<h4>2nd February 1544</h4>
+		<div class="col-md-6">
+			<img src="{% static 'img/plaques.jpg' %}">
+		</div>
+		<div class="col-md-6">
+			<p class="intro-text">These bronze plaques were probably from on the Victorian fountain in Market Square.  Mr Robert Noel from the <a href="https://www.college-of-arms.gov.uk">College of Arms</a> has identified them for the Trustees.  The shields on the right are the Coat of Arms of Cambridge University (top) and Cambridge Town (bottom).</p>
+			<p class="intro-text">The others may represent benefactors.  The plaque at the top left is the shield for the Fitzwilliam – Wentworth family. The red lozenges from the <a href="https://en.wikipedia.org/wiki/Earl_Fitzwilliam">Fitzwilliam family</a> and chevron with leopards from Watson Wentworth side.  The two families were united in marriage in 1744.The other (bottom left) shield attribution is complex but may represent a variation of the Perne family crest.</p>
+			<p class="intro-text">The plaques were donated by the Trustees in 2017 to the Museum of Cambridge.</p>	
+		</div>
+	</div>
+</section>
+{% endblock %}

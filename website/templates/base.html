@@ -63,6 +63,9 @@
                     <li>
                         <a class="{% if request.resolver_match.url_name == 'trust' %}active{% endif %}" href="{% url 'trust' %}">Trust</a>
                     </li>
+                    <li>
+                        <a class="{% if request.resolver_match.url_name == 'news' %}active{% endif %}" href="{% url 'news' %}">News</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
